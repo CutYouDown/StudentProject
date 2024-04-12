@@ -22,11 +22,8 @@ public class GroupController {
         groupService.addGroup(addGroupRequestDto);
     }
 
-
-
     @GetMapping(path = "/get")
     public void getGroup(){
         System.out.println("GETTING");
-
     }
 }

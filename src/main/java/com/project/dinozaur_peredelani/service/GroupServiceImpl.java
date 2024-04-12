@@ -1,0 +1,16 @@
+package com.project.dinozaur_peredelani.service;
+
+import com.project.dinozaur_peredelani.Group;
+import com.project.dinozaur_peredelani.dto.AddGroupRequestDto;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
+import org.springframework.stereotype.Service;
+
+@Service
+public class GroupServiceImpl implements GroupService{
+    @Override
+    public void addGroup(AddGroupRequestDto addGroupRequestDto) {
+        System.out.println("ADDING");
+        Group group = new Group();
+        group.setGroupName(addGroupRequestDto.getGroupName());
+    }
+}
