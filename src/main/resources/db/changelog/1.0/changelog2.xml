@@ -8,7 +8,7 @@
             <column name="id" type="int" autoIncrement="true">
                 <constraints nullable="false" primaryKey="true"/>
             </column>
-            <column name="group-name" type="varchar(250)"/>
+            <column name="name" type="varchar(250)"/>
             <column name="number-of-students" type="int"/>
         </createTable>
     </changeSet>

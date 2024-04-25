@@ -14,8 +14,8 @@ public class Group {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Integer id;
-    @Column(name = "group-name")
-    String groupName;
+    @Column
+    String name;
     @Column(name = "number-of-students")
     Integer quantity;
 }

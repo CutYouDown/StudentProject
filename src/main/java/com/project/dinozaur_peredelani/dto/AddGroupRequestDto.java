@@ -8,7 +8,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class AddGroupRequestDto {
-    //private int id;
-    private String groupName;
-    //private int quantity;
+    private String name;
+    private int quantity;
 }
