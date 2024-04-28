@@ -1,182 +1,30 @@
-2024-04-24T10:27:30.503+02:00  INFO 5892 --- [main] c.p.d.DinozaurPeredelaniApplication      : Starting DinozaurPeredelaniApplication using Java 17.0.9 with PID 5892 (C:\Users\Zaur\Documents\Ultimate projects\Dinozaur_peredelani\target\classes started by Zaur in C:\Users\Zaur\Documents\Ultimate projects\Dinozaur_peredelani)
-2024-04-24T10:27:30.517+02:00  INFO 5892 --- [main] c.p.d.DinozaurPeredelaniApplication      : The following 1 profile is active: "test"
-2024-04-24T10:27:32.440+02:00  INFO 5892 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-04-24T10:27:32.486+02:00  INFO 5892 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30 ms. Found 0 JPA repository interfaces.
-2024-04-24T10:27:33.541+02:00  INFO 5892 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2024-04-24T10:27:33.568+02:00  INFO 5892 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-04-24T10:27:33.569+02:00  INFO 5892 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
-2024-04-24T10:27:33.950+02:00  INFO 5892 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-04-24T10:27:33.951+02:00  INFO 5892 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3036 ms
-2024-04-24T10:27:39.215+02:00  INFO 5892 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-04-24T10:27:39.535+02:00  INFO 5892 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7730ef88
-2024-04-24T10:27:39.539+02:00  INFO 5892 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-04-24T10:27:39.915+02:00  INFO 5892 --- [main] liquibase.database                       : Set default schema name to public
-2024-04-24T10:27:41.549+02:00  INFO 5892 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
-2024-04-24T10:27:41.563+02:00  INFO 5892 --- [main] liquibase.executor                       : Changelog query completed.
-2024-04-24T10:27:41.730+02:00  INFO 5892 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-04-24T10:27:43.106+02:00  INFO 5892 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
-2024-04-24T10:27:43.110+02:00  INFO 5892 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
-2024-04-24T10:27:43.615+02:00  INFO 5892 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-04-24T10:27:45.674+02:00  INFO 5892 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-04-24T10:27:45.765+02:00  INFO 5892 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-04-24T10:27:46.878+02:00  INFO 5892 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2024-04-24T10:27:46.933+02:00  INFO 5892 --- [main] c.p.d.DinozaurPeredelaniApplication      : Started DinozaurPeredelaniApplication in 17.572 seconds (process running for 23.706)
-2024-04-24T10:28:50.092+02:00  INFO 5892 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-04-24T10:28:50.094+02:00  INFO 5892 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-04-24T10:28:50.095+02:00  INFO 5892 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2024-04-24T10:28:50.208+02:00  INFO 5892 --- [http-nio-8080-exec-2] c.p.d.service.GroupServiceImpl           : Hello World
-2024-04-24T11:08:17.338+02:00  INFO 5892 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-04-24T11:08:17.343+02:00  INFO 5892 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-04-24T11:08:17.348+02:00  INFO 5892 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-04-24T12:57:49.616+02:00  INFO 4576 --- [main] c.p.d.DinozaurPeredelaniApplication      : Starting DinozaurPeredelaniApplication using Java 17.0.9 with PID 4576 (C:\Users\Zaur\Documents\Ultimate projects\Dinozaur_peredelani\target\classes started by Zaur in C:\Users\Zaur\Documents\Ultimate projects\Dinozaur_peredelani)
-2024-04-24T12:57:49.621+02:00  INFO 4576 --- [main] c.p.d.DinozaurPeredelaniApplication      : The following 1 profile is active: "test"
-2024-04-24T12:57:51.245+02:00  INFO 4576 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-04-24T12:57:51.300+02:00  INFO 4576 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 33 ms. Found 0 JPA repository interfaces.
-2024-04-24T12:57:52.397+02:00  INFO 4576 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2024-04-24T12:57:52.437+02:00  INFO 4576 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-04-24T12:57:52.437+02:00  INFO 4576 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
-2024-04-24T12:57:52.975+02:00  INFO 4576 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-04-24T12:57:52.975+02:00  INFO 4576 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3212 ms
-2024-04-24T12:57:57.991+02:00  INFO 4576 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-04-24T12:57:58.518+02:00  INFO 4576 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@776015fc
-2024-04-24T12:57:58.518+02:00  INFO 4576 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-04-24T12:57:58.967+02:00  INFO 4576 --- [main] liquibase.database                       : Set default schema name to public
-2024-04-24T12:57:59.927+02:00  INFO 4576 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
-2024-04-24T12:57:59.937+02:00  INFO 4576 --- [main] liquibase.executor                       : Changelog query completed.
-2024-04-24T12:58:00.172+02:00  INFO 4576 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-04-24T12:58:00.811+02:00  INFO 4576 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
-2024-04-24T12:58:00.821+02:00  INFO 4576 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
-2024-04-24T12:58:01.970+02:00  INFO 4576 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-04-24T12:58:11.653+02:00  INFO 4576 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-04-24T12:58:11.744+02:00  INFO 4576 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-04-24T12:58:13.563+02:00  INFO 4576 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2024-04-24T12:58:13.583+02:00  INFO 4576 --- [main] c.p.d.DinozaurPeredelaniApplication      : Started DinozaurPeredelaniApplication in 25.245 seconds (process running for 29.457)
-2024-04-24T12:59:13.609+02:00  INFO 4576 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-04-24T12:59:13.614+02:00  INFO 4576 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-04-24T12:59:13.619+02:00  INFO 4576 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
-2024-04-24T13:00:41.743+02:00  WARN 4576 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m43s102ms614µs300ns).
-2024-04-24T13:00:41.748+02:00  INFO 4576 --- [http-nio-8080-exec-2] c.p.d.service.GroupServiceImpl           : Hello World
-2024-04-24T13:00:41.955+02:00  INFO 4576 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-04-24T13:00:41.960+02:00  INFO 4576 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-04-24T13:00:41.985+02:00  INFO 4576 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-04-24T13:00:53.344+02:00  INFO 2692 --- [main] c.p.d.DinozaurPeredelaniApplication      : Starting DinozaurPeredelaniApplication using Java 17.0.9 with PID 2692 (C:\Users\Zaur\Documents\Ultimate projects\Dinozaur_peredelani\target\classes started by Zaur in C:\Users\Zaur\Documents\Ultimate projects\Dinozaur_peredelani)
-2024-04-24T13:00:53.354+02:00  INFO 2692 --- [main] c.p.d.DinozaurPeredelaniApplication      : The following 1 profile is active: "test"
-2024-04-24T13:00:55.628+02:00  INFO 2692 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-04-24T13:00:55.673+02:00  INFO 2692 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28 ms. Found 0 JPA repository interfaces.
-2024-04-24T13:00:56.708+02:00  INFO 2692 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2024-04-24T13:00:56.721+02:00  INFO 2692 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-04-24T13:00:56.721+02:00  INFO 2692 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
-2024-04-24T13:00:56.926+02:00  INFO 2692 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-04-24T13:00:56.931+02:00  INFO 2692 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3472 ms
-2024-04-24T13:00:58.225+02:00  INFO 2692 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-04-24T13:00:58.456+02:00  INFO 2692 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1c8f6c66
-2024-04-24T13:00:58.461+02:00  INFO 2692 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-04-24T13:00:58.713+02:00  INFO 2692 --- [main] liquibase.database                       : Set default schema name to public
-2024-04-24T13:00:59.449+02:00  INFO 2692 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
-2024-04-24T13:00:59.459+02:00  INFO 2692 --- [main] liquibase.executor                       : Changelog query completed.
-2024-04-24T13:00:59.604+02:00  INFO 2692 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-04-24T13:00:59.726+02:00  INFO 2692 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
-2024-04-24T13:00:59.731+02:00  INFO 2692 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
-2024-04-24T13:01:00.196+02:00  INFO 2692 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-04-24T13:01:02.330+02:00  INFO 2692 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-04-24T13:01:02.385+02:00  INFO 2692 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-04-24T13:01:03.076+02:00  INFO 2692 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2024-04-24T13:01:03.091+02:00  INFO 2692 --- [main] c.p.d.DinozaurPeredelaniApplication      : Started DinozaurPeredelaniApplication in 10.761 seconds (process running for 12.835)
-2024-04-24T13:01:52.216+02:00  INFO 2692 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-04-24T13:01:52.216+02:00  INFO 2692 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-04-24T13:01:52.216+02:00  INFO 2692 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2024-04-24T13:21:34.279+02:00  WARN 2692 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=20m5s717ms92µs800ns).
-2024-04-24T13:21:34.294+02:00  INFO 2692 --- [http-nio-8080-exec-2] c.p.d.service.GroupServiceImpl           : Hello World
-2024-04-24T13:21:34.357+02:00  INFO 2692 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-04-24T13:21:34.373+02:00  INFO 2692 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-04-24T13:21:34.373+02:00  INFO 2692 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-04-24T13:55:24.159+02:00  INFO 4272 --- [main] c.p.d.DinozaurPeredelaniApplication      : Starting DinozaurPeredelaniApplication using Java 17.0.9 with PID 4272 (C:\Users\Zaur\Documents\Ultimate projects\Dinozaur_peredelani\target\classes started by Zaur in C:\Users\Zaur\Documents\Ultimate projects\Dinozaur_peredelani)
-2024-04-24T13:55:24.164+02:00  INFO 4272 --- [main] c.p.d.DinozaurPeredelaniApplication      : The following 1 profile is active: "test"
-2024-04-24T13:55:26.809+02:00  INFO 4272 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-04-24T13:55:26.844+02:00  INFO 4272 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 0 JPA repository interfaces.
-2024-04-24T13:55:27.863+02:00  INFO 4272 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2024-04-24T13:55:27.883+02:00  INFO 4272 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-04-24T13:55:27.883+02:00  INFO 4272 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
-2024-04-24T13:55:28.071+02:00  INFO 4272 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-04-24T13:55:28.071+02:00  INFO 4272 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3050 ms
-2024-04-24T13:55:28.334+02:00  INFO 4272 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-04-24T13:55:28.594+02:00  INFO 4272 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@53aa38be
-2024-04-24T13:55:28.594+02:00  INFO 4272 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-04-24T13:55:28.924+02:00  INFO 4272 --- [main] liquibase.database                       : Set default schema name to public
-2024-04-24T13:55:29.981+02:00  INFO 4272 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
-2024-04-24T13:55:29.991+02:00  INFO 4272 --- [main] liquibase.executor                       : Changelog query completed.
-2024-04-24T13:55:30.115+02:00  INFO 4272 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-04-24T13:55:30.212+02:00  INFO 4272 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
-2024-04-24T13:55:30.217+02:00  INFO 4272 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
-2024-04-24T13:55:31.412+02:00  INFO 4272 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-04-24T13:55:37.586+02:00  INFO 4272 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-04-24T13:55:37.671+02:00  INFO 4272 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-04-24T13:55:38.547+02:00  INFO 4272 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2024-04-24T13:55:38.566+02:00  INFO 4272 --- [main] c.p.d.DinozaurPeredelaniApplication      : Started DinozaurPeredelaniApplication in 16.598 seconds (process running for 18.706)
-2024-04-24T13:56:15.688+02:00  INFO 4272 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-04-24T13:56:15.689+02:00  INFO 4272 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-04-24T13:56:15.690+02:00  INFO 4272 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2024-04-24T13:56:15.853+02:00  INFO 4272 --- [http-nio-8080-exec-2] c.p.d.service.GroupServiceImpl           : Hello World
-2024-04-24T13:57:26.609+02:00  INFO 4272 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-04-24T13:57:26.613+02:00  INFO 4272 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-04-24T13:57:26.627+02:00  INFO 4272 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-04-24T14:00:46.724+02:00  INFO 4368 --- [main] c.p.d.DinozaurPeredelaniApplication      : Starting DinozaurPeredelaniApplication using Java 17.0.9 with PID 4368 (C:\Users\Zaur\Documents\Ultimate projects\Dinozaur_peredelani\target\classes started by Zaur in C:\Users\Zaur\Documents\Ultimate projects\Dinozaur_peredelani)
-2024-04-24T14:00:46.729+02:00  INFO 4368 --- [main] c.p.d.DinozaurPeredelaniApplication      : The following 1 profile is active: "test"
-2024-04-24T14:00:47.922+02:00  INFO 4368 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-04-24T14:00:47.967+02:00  INFO 4368 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24 ms. Found 0 JPA repository interfaces.
-2024-04-24T14:00:48.687+02:00  INFO 4368 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2024-04-24T14:00:48.706+02:00  INFO 4368 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-04-24T14:00:48.706+02:00  INFO 4368 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
-2024-04-24T14:00:48.856+02:00  INFO 4368 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-04-24T14:00:48.857+02:00  INFO 4368 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2017 ms
-2024-04-24T14:00:49.179+02:00  INFO 4368 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-04-24T14:00:49.373+02:00  INFO 4368 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@316cda31
-2024-04-24T14:00:49.375+02:00  INFO 4368 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-04-24T14:00:50.292+02:00  INFO 4368 --- [main] liquibase.database                       : Set default schema name to public
-2024-04-24T14:00:51.931+02:00  INFO 4368 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
-2024-04-24T14:00:51.941+02:00  INFO 4368 --- [main] liquibase.executor                       : Changelog query completed.
-2024-04-24T14:00:54.529+02:00  INFO 4368 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-04-24T14:00:54.844+02:00  INFO 4368 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
-2024-04-24T14:00:54.854+02:00  INFO 4368 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
-2024-04-24T14:00:56.120+02:00  INFO 4368 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-04-24T14:00:57.486+02:00  INFO 4368 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-04-24T14:00:57.532+02:00  INFO 4368 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-04-24T14:00:58.134+02:00  INFO 4368 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2024-04-24T14:00:58.154+02:00  INFO 4368 --- [main] c.p.d.DinozaurPeredelaniApplication      : Started DinozaurPeredelaniApplication in 12.321 seconds (process running for 13.835)
-2024-04-24T14:01:03.095+02:00  INFO 4368 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-04-24T14:01:03.096+02:00  INFO 4368 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-04-24T14:01:03.098+02:00  INFO 4368 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2024-04-24T14:01:04.316+02:00  INFO 4368 --- [http-nio-8080-exec-2] c.p.d.service.GroupServiceImpl           : Hello World
-2024-04-24T14:01:33.764+02:00  INFO 4368 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-04-24T14:01:33.769+02:00  INFO 4368 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-04-24T14:01:33.778+02:00  INFO 4368 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-04-24T14:47:46.269+02:00  INFO 1224 --- [main] c.p.d.DinozaurPeredelaniApplication      : Starting DinozaurPeredelaniApplication using Java 17.0.9 with PID 1224 (C:\Users\Zaur\Documents\Ultimate projects\Dinozaur_peredelani\target\classes started by Zaur in C:\Users\Zaur\Documents\Ultimate projects\Dinozaur_peredelani)
-2024-04-24T14:47:46.274+02:00  INFO 1224 --- [main] c.p.d.DinozaurPeredelaniApplication      : The following 1 profile is active: "test"
-2024-04-24T14:47:47.302+02:00  INFO 1224 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-04-24T14:47:47.412+02:00  INFO 1224 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 85 ms. Found 1 JPA repository interface.
-2024-04-24T14:47:48.051+02:00  INFO 1224 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2024-04-24T14:47:48.065+02:00  INFO 1224 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-04-24T14:47:48.065+02:00  INFO 1224 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
-2024-04-24T14:47:48.197+02:00  INFO 1224 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-04-24T14:47:48.197+02:00  INFO 1224 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1841 ms
-2024-04-24T14:47:48.611+02:00  INFO 1224 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-04-24T14:47:49.111+02:00  INFO 1224 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3a7c678b
-2024-04-24T14:47:49.111+02:00  INFO 1224 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-04-24T14:47:49.329+02:00  INFO 1224 --- [main] liquibase.database                       : Set default schema name to public
-2024-04-24T14:47:50.070+02:00  INFO 1224 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
-2024-04-24T14:47:50.085+02:00  INFO 1224 --- [main] liquibase.executor                       : Changelog query completed.
-2024-04-24T14:47:50.233+02:00  INFO 1224 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-04-24T14:47:50.327+02:00  INFO 1224 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
-2024-04-24T14:47:50.332+02:00  INFO 1224 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
-2024-04-24T14:47:50.700+02:00  INFO 1224 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-04-24T14:47:51.940+02:00  INFO 1224 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-04-24T14:47:52.002+02:00  INFO 1224 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-04-24T14:47:52.951+02:00  INFO 1224 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2024-04-24T14:47:52.961+02:00  INFO 1224 --- [main] c.p.d.DinozaurPeredelaniApplication      : Started DinozaurPeredelaniApplication in 7.392 seconds (process running for 8.701)
-2024-04-24T14:48:00.657+02:00  INFO 1224 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-04-24T14:48:00.658+02:00  INFO 1224 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-04-24T14:48:00.661+02:00  INFO 1224 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
-2024-04-24T14:48:00.804+02:00  INFO 1224 --- [http-nio-8080-exec-1] c.p.d.service.GroupServiceImpl           : Hello World
-2024-04-24T15:42:54.910+02:00  INFO 1224 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-04-24T15:42:54.945+02:00  INFO 1224 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-04-24T15:42:54.960+02:00  INFO 1224 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-04-28T22:07:25.243+02:00  INFO 7088 --- [main] c.p.d.DinozaurPeredelaniApplication      : Starting DinozaurPeredelaniApplication using Java 17.0.9 with PID 7088 (C:\Users\Zaur\Documents\Ultimate projects\Dinozaur_peredelani\target\classes started by Zaur in C:\Users\Zaur\Documents\Ultimate projects\Dinozaur_peredelani)
+2024-04-28T22:07:25.252+02:00  INFO 7088 --- [main] c.p.d.DinozaurPeredelaniApplication      : The following 1 profile is active: "test"
+2024-04-28T22:07:30.699+02:00  INFO 7088 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-28T22:07:30.864+02:00  INFO 7088 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 139 ms. Found 2 JPA repository interfaces.
+2024-04-28T22:07:32.488+02:00  INFO 7088 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2024-04-28T22:07:32.511+02:00  INFO 7088 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-28T22:07:32.514+02:00  INFO 7088 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2024-04-28T22:07:32.789+02:00  INFO 7088 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-28T22:07:32.790+02:00  INFO 7088 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 7340 ms
+2024-04-28T22:07:33.223+02:00  INFO 7088 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-04-28T22:07:33.704+02:00  INFO 7088 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@8054fe2
+2024-04-28T22:07:33.709+02:00  INFO 7088 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-04-28T22:07:34.113+02:00  INFO 7088 --- [main] liquibase.database                       : Set default schema name to public
+2024-04-28T22:07:35.096+02:00  INFO 7088 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-04-28T22:07:35.112+02:00  INFO 7088 --- [main] liquibase.executor                       : Changelog query completed.
+2024-04-28T22:07:35.316+02:00  INFO 7088 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-28T22:07:35.497+02:00  INFO 7088 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
+2024-04-28T22:07:35.505+02:00  INFO 7088 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2024-04-28T22:07:36.112+02:00  INFO 7088 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-28T22:07:37.890+02:00  INFO 7088 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-28T22:07:37.979+02:00  INFO 7088 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-28T22:07:39.421+02:00  INFO 7088 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2024-04-28T22:07:39.438+02:00  INFO 7088 --- [main] c.p.d.DinozaurPeredelaniApplication      : Started DinozaurPeredelaniApplication in 15.579 seconds (process running for 17.995)
+2024-04-28T22:09:31.681+02:00  INFO 7088 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-28T22:09:31.682+02:00  INFO 7088 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-04-28T22:09:31.689+02:00  INFO 7088 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2024-04-28T22:09:31.835+02:00  INFO 7088 --- [http-nio-8080-exec-2] c.p.d.service.StudentServiceImpl         : Doin logging job
+2024-04-28T22:12:14.477+02:00  INFO 7088 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-28T22:12:14.477+02:00  INFO 7088 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-04-28T22:12:14.487+02:00  INFO 7088 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
