@@ -14,8 +14,11 @@ public class Student {
     Integer id;
     @Column
     String name;
-    @Column(name = "group-id")
-    Integer group;
+    @Column(name = "group-id", insertable = false, updatable = false)
+    Integer groupId;
+    @ManyToOne
+    @JoinColumn(name = "group-id")
+    private Group group;
 
 
 }

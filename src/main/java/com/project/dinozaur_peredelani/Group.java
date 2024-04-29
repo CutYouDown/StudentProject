@@ -16,6 +16,6 @@ public class Group {
     Integer id;
     @Column
     String name;
-    @Column(name = "number-of-students")
-    Integer quantity;
+    @OneToMany(mappedBy = "group")
+    private List<Student> students;
 }

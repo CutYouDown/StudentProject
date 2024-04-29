@@ -9,5 +9,4 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class AddGroupRequestDto {
     private String name;
-    private int quantity;
 }
