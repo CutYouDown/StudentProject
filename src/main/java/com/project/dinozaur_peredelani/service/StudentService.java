@@ -1,13 +1,11 @@
 package com.project.dinozaur_peredelani.service;
 
-import com.project.dinozaur_peredelani.Student;
-import com.project.dinozaur_peredelani.dto.AddStudentRequestDto;
-import com.project.dinozaur_peredelani.dto.GetStudentRequestDto;
+import com.project.dinozaur_peredelani.dto.StudentRequestDto;
 
 import java.util.List;
 
 public interface StudentService {
-    void addStudent (AddStudentRequestDto addStudentRequestDto);
+    void addStudent (StudentRequestDto studentRequestDto);
 
     List<Object> getAllStudents();
 }

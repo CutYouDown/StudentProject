@@ -13,9 +13,9 @@ import java.util.List;
 public class Group {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Integer id;
+    private Integer id;
     @Column
-    String name;
-    @OneToMany(mappedBy = "group")
+    private String name;
+    @OneToMany(mappedBy = "group", cascade = CascadeType.ALL)
     private List<Student> students;
 }

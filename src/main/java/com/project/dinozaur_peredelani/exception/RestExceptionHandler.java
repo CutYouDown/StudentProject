@@ -1,4 +1,4 @@
-package com.project.dinozaur_peredelani.error;
+package com.project.dinozaur_peredelani.exception;
 
 import com.project.dinozaur_peredelani.controller.ZaurException;
 import org.springframework.http.ResponseEntity;

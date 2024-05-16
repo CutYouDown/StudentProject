@@ -1,30 +1,29 @@
 package com.project.dinozaur_peredelani.service;
 
-import com.project.dinozaur_peredelani.Group;
 import com.project.dinozaur_peredelani.Student;
 import com.project.dinozaur_peredelani.dao.StudentRepository;
-import com.project.dinozaur_peredelani.dto.AddStudentRequestDto;
-import com.project.dinozaur_peredelani.dto.GetStudentRequestDto;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import com.project.dinozaur_peredelani.dto.StudentRequestDto;
+import com.project.dinozaur_peredelani.mapper.StudentMapper;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
+@Slf4j
 public class StudentServiceImpl implements StudentService{
     @Autowired
     private StudentRepository studentRepository;
+    @Autowired
+    StudentMapper studentMapper;
     @Override
-    public void addStudent(AddStudentRequestDto addStudentRequestDto) {
-        Logger logger= LoggerFactory.getLogger(StudentServiceImpl.class);
-        logger.info("Doin logging job");
-        Student student = new Student();
-        student.setName(addStudentRequestDto.getName());
-        student.setGroupId(addStudentRequestDto.getGroup());
+    public void addStudent(StudentRequestDto studentRequestDto) {
+        log.info("Doin logging job");
+        Student student = studentMapper.toStudent(studentRequestDto);
         studentRepository.save(student);
         System.out.println("Adding dis trash");
+
     }
 
     @Override

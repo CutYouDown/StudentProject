@@ -1,40 +1,37 @@
 package com.project.dinozaur_peredelani.controller;
 
 import com.project.dinozaur_peredelani.Group;
-import com.project.dinozaur_peredelani.dto.AddGroupRequestDto;
-import com.project.dinozaur_peredelani.dto.GetGroupRequestDto;
+import com.project.dinozaur_peredelani.dto.GroupRequestDto;
 import com.project.dinozaur_peredelani.service.GroupService;
-import com.project.dinozaur_peredelani.service.GroupServiceImpl;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
 import java.util.List;
 
 
 @RestController
+@Slf4j
 @RequestMapping(path = "/groups")
 public class GroupController {
-
     @Autowired
     private GroupService groupService;
 
     @PostMapping
-    public void addGroup(@RequestBody AddGroupRequestDto addGroupRequestDto){
-        groupService.addGroup(addGroupRequestDto);
+    public void addGroup(@RequestBody GroupRequestDto groupRequestDto){
+        log.info("Получен запрос на добавление группы");
+        groupService.addGroup(groupRequestDto);
     }
 
     @GetMapping
     public List<Group> getGroup(){
-        Logger logger = LoggerFactory.getLogger(GroupServiceImpl.class);
-        logger.info("сработала ручка get-запроса /groups");
-        System.out.println("сработала ручка get-запроса /groups");
+        log.info("Получен запрос на выдачу списка групп");
         return groupService.getAllGroups();
     }
 
     @GetMapping("/{id}")
-    public GetGroupRequestDto getGroup(@PathVariable Integer id){
-        System.out.println("запрошенный айдишник: " + id);
+    public GroupRequestDto getGroup(@PathVariable Integer id){
+        log.info("Получен запрос на выдачу группы с id={}", id);
         return groupService.getGroup(id);
     }
 
