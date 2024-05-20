@@ -6,10 +6,16 @@ import org.mapstruct.Mapper;
 
 import java.util.List;
 
-@Mapper
+@Mapper(componentModel = "spring")
 public interface GroupMapper {
-    Group toGroup(GroupRequestDto groupRequestDto);
+    GroupRequestDto toDto (Group group);
+    Group toEntity (GroupRequestDto groupRequestDto);
+
+
+
+
+    /*Group toGroup(GroupRequestDto groupRequestDto);
     List<Group> toGroupList(List<GroupRequestDto> groupRequestDto);
     GroupRequestDto toGroupRequestDto (Group group);
-    List<GroupRequestDto> toGroupRequestDtoList (List<Group> group);
+    List<GroupRequestDto> toGroupRequestDtoList (List<Group> group);*/
 }

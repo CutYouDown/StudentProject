@@ -7,10 +7,18 @@ import org.mapstruct.Mapping;
 
 import java.util.List;
 
-@Mapper(componentModel = "spring", imports = {Student.class})
+@Mapper(componentModel = "spring", uses = {GroupMapper.class})
 public interface StudentMapper {
-    Student toStudent(StudentRequestDto studentRequestDto);
+    @Mapping(source = "group.id", target = "groupId")
+    @Mapping(source = "group.name", target = "groupName")
+    StudentRequestDto toDto (Student student);
+    @Mapping(source = "groupId", target = "group.id")
+    Student toEntity (StudentRequestDto studentRequestDto);
+
+
+
+    /*Student toStudent(StudentRequestDto studentRequestDto);
     List<Student> toStudentList(List<StudentRequestDto> studentRequestDto);
     StudentRequestDto toStudentRequestDto (Student student);
-    List<StudentRequestDto> toStudentRequestDtoList (List<Student> student);
+    List<StudentRequestDto> toStudentRequestDtoList (List<Student> student);*/
 }

@@ -7,5 +7,5 @@ import java.util.List;
 public interface StudentService {
     void addStudent (StudentRequestDto studentRequestDto);
 
-    List<Object> getAllStudents();
+    List<StudentRequestDto> getAllStudents();
 }

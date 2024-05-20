@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 @Slf4j
@@ -20,15 +21,18 @@ public class StudentServiceImpl implements StudentService{
     @Override
     public void addStudent(StudentRequestDto studentRequestDto) {
         log.info("Doin logging job");
-        Student student = studentMapper.toStudent(studentRequestDto);
+        Student student = studentMapper.toEntity(studentRequestDto);
         studentRepository.save(student);
         System.out.println("Adding dis trash");
 
     }
-
     @Override
-    public List<Object> getAllStudents() {
-        List<Object> allStudents = studentRepository.getCombinedData();
-        return allStudents;
+    public List<StudentRequestDto> getAllStudents() {
+        List<Student> allStudents = studentRepository.findAll();
+        return allStudents.stream()
+                .map(studentMapper::toDto)
+                .collect(Collectors.toList());
     }
+
+
 }

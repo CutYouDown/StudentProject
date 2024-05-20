@@ -19,10 +19,13 @@ public class StudentController {
         log.info("Получен запрос на добавление студента");
         studentService.addStudent(studentRequestDto);
     }
+
     @GetMapping
-    public List<Object> getAll(){
+    public List<StudentRequestDto> getAll(){
         log.info("Получен запрос на выдачу списка студентов");
         return studentService.getAllStudents();
     }
     //public void getStudentError(){throw new ZaurException();}
+
+
 }

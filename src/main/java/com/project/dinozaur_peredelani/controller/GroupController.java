@@ -24,7 +24,7 @@ public class GroupController {
     }
 
     @GetMapping
-    public List<Group> getGroup(){
+    public List<GroupRequestDto> getGroup(){
         log.info("Получен запрос на выдачу списка групп");
         return groupService.getAllGroups();
     }

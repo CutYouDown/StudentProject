@@ -14,10 +14,8 @@ public class Student {
     private Integer id;
     @Column
     private String name;
-    @Column
-    Integer groupId;
     @ManyToOne
-    @JoinColumn(name = "group-id", nullable = false)
+    @JoinColumn(name = "group-id")
     private Group group;
 
 
