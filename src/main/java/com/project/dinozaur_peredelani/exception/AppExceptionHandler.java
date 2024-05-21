@@ -1,19 +1,18 @@
 package com.project.dinozaur_peredelani.exception;
 
-import com.project.dinozaur_peredelani.controller.ZaurException;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 @RestControllerAdvice
-public class RestExceptionHandler {
+public class AppExceptionHandler {
 
-    @ExceptionHandler(value = {ZaurException.class})
-    protected ResponseEntity<ErrorDto> handleZaurError() {
+    @ExceptionHandler
+    public ResponseEntity<AppExceptionDto> handleAppException(AppException e) {
         return ResponseEntity
-                .status(400)
+                .status(500)
                 .header("zalupa", "49,5cm")
-                .body(new ErrorDto(400,"Aw shieeeeeeet"));
+                .body(new AppExceptionDto(500,"Aw shieeeeeeet"));
 
     }
 

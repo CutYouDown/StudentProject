@@ -14,11 +14,4 @@ public interface StudentMapper {
     StudentRequestDto toDto (Student student);
     @Mapping(source = "groupId", target = "group.id")
     Student toEntity (StudentRequestDto studentRequestDto);
-
-
-
-    /*Student toStudent(StudentRequestDto studentRequestDto);
-    List<Student> toStudentList(List<StudentRequestDto> studentRequestDto);
-    StudentRequestDto toStudentRequestDto (Student student);
-    List<StudentRequestDto> toStudentRequestDtoList (List<Student> student);*/
 }

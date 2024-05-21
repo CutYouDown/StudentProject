@@ -1,6 +1,7 @@
 package com.project.dinozaur_peredelani.controller;
 
 import com.project.dinozaur_peredelani.dto.StudentRequestDto;
+import com.project.dinozaur_peredelani.exception.AppException;
 import com.project.dinozaur_peredelani.service.StudentService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,7 +26,4 @@ public class StudentController {
         log.info("Получен запрос на выдачу списка студентов");
         return studentService.getAllStudents();
     }
-    //public void getStudentError(){throw new ZaurException();}
-
-
 }

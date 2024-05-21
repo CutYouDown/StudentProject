@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class ErrorDto {
+public class AppExceptionDto {
     private int code;
     private String description;
 }
