@@ -10,9 +10,9 @@ public class AppExceptionHandler {
     @ExceptionHandler
     public ResponseEntity<AppExceptionDto> handleAppException(AppException e) {
         return ResponseEntity
-                .status(500)
+                .status(404)
                 .header("zalupa", "49,5cm")
-                .body(new AppExceptionDto(500,"Aw shieeeeeeet"));
+                .body(new AppExceptionDto(404,"Нет такой группы"));
 
     }
 
